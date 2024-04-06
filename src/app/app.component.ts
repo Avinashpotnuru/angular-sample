@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sample';
+
+  city:string=""
+  count:number=0
+  toggle:boolean=true
+
+  add(){
+    this.count+=1
+
+  }
+
+  minus(){
+    this.count-=1
+  }
 }
