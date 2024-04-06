@@ -1,2 +1,18 @@
 <p>header works!</p>
-<app-footer></app-footer>
+
+<nav *ngFor="let item of data">
+
+    <a routerLink={{item}}>{{item}}</a>
+</nav>
+<div *ngFor="let item of mobileData">
+    <p>{{item}}</p>
+</div>
+
+<div *ngFor="let item of productsArray">
+    <p>{{item.title}}</p>
+</div>
+
+
+<a [routerLink]="['/aboutcard','id']">card</a>
+
+<!-- <app-footer></app-footer> -->

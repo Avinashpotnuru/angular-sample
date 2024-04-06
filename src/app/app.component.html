@@ -1,6 +1,6 @@
-<app-example></app-example>
-<app-header></app-header>
-<h1 [style.color]="count%2===0 ?'red':'green'">counter:{{count}}</h1>
+<!-- <app-example></app-example> -->
+<!-- <app-header [cName]="cName"></app-header> -->
+<!-- <h1 [style.color]="count%2===0 ?'red':'green'">counter:{{count}}</h1>
 <button (click)="add()">add</button>
 <button (click)="minus()">minus</button>
 
@@ -11,4 +11,13 @@
 </ng-template>
 
 <input placeholder="enter city name" [(ngModel)]="city" />
-<h1>length:{{city.length}}</h1>
+<h1>length:{{city.length}}</h1> -->
+<app-header></app-header>
+
+<!-- <h1 #heading>hello {{child.name}}</h1> -->
+<!-- <app-child [data1]="data1"></app-child>
+<app-child [data2]="data2"></app-child> -->
+<!-- <app-child #child></app-child>
+<button (click)="test()">TESTING</button>
+<button (click)="changeColor()">TESTING</button> -->
+<router-outlet></router-outlet>
